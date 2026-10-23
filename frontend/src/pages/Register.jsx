@@ -34,7 +34,7 @@ function Register() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/auth/register/",
+        "https://forensishield-ai-backend.onrender.com/api/auth/register/",
         {
           username: username.trim(),
           email: email.trim(),
