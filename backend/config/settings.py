@@ -144,6 +144,7 @@ DEFAULT_FROM_EMAIL = 'noreply@forensishield.local'
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
+    'https://forensi-shield-ai.vercel.app'
 ]
 
 REST_FRAMEWORK = {
