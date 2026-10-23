@@ -1,6 +1,6 @@
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL ||
-  "http://127.0.0.1:8000/api";
+  "https://forensishield-ai-backend.onrender.com/api";
 
 function getAccessToken() {
   return localStorage.getItem("access_token");
