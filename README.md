@@ -88,3 +88,32 @@ Developed as a cybersecurity and full-stack development project.
 ---
 
 Disclaimer: ForensiShield AI is intended to assist security analysis and investigations. Its findings should be verified before taking security or incident-response actions.
+
+
+## System Architecture
+The following diagram illustrates the architecture of ForensiShield AI.
+
+                          USER
+                           |
+                           v
+                +----------------------+
+                |    React Frontend    |
+                |  Vite + Tailwind CSS |
+                |   Deployed on Vercel |
+                +----------------------+
+                           |
+                           | REST API Requests
+                           v
+                +----------------------+
+                |    Django Backend    |
+                |   Django REST API    |
+                |  Deployed on Render  |
+                +----------------------+
+                           |
+              +------------+------------+
+              |            |            |
+              v            v            v
+       +-------------+ +----------+ +-------------+
+       |  Supabase   | | Log File | | Gemini AI   |
+       | PostgreSQL  | | Analysis | | Integration |
+       +-------------+ +----------+ +-------------+
